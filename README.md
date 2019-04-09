@@ -4,6 +4,10 @@ This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror
 
 The module is based on the default compliment & MMM-kudos modules. MMM-DailySpecials displays 'special out of a set of predefined ones. Depending on the current day the used special set can be defined.
 
+## Screenshots
+
+![ScreenShot](https://github.com/justjim1220/MMM-DailySpecials/blob/master/Screenshot%20(43).png)
+
 ## Using the module
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
