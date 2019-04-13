@@ -56,12 +56,8 @@ To use this module, add the following configuration block to the modules array i
                         "$2 Can Beer"
                     ]
                 },
-              updateInterval: 86400000, // 24 hours OR 1 day
-              remoteFile: null,
-              fadeSpeed: 500
             }
-        }
-    },
+        },
 ```
 
 ## Configuration options
