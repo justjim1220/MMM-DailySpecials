@@ -2,7 +2,7 @@
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/).
 
-The module is based on the default compliment & MMM-kudos modules. MMM-DailySpecials displays 'special out of a set of predefined ones. Depending on the current day the used special set can be defined.
+The module is based on the default compliment & MMM-kudos modules. MMM-DailySpecials displays _special_ out of a set of predefined ones. Depending on the current day the used special set can be defined.
 
 ## Screenshots
 
