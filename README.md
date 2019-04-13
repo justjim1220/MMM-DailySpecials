@@ -8,6 +8,15 @@ The module is based on the default compliment & MMM-kudos modules. MMM-DailySpec
 
 ![ScreenShot](https://github.com/justjim1220/MMM-DailySpecials/blob/master/Screenshot%20(43).png)
 
+## Installing this module:
+
+$ cd MagicMirror<br>
+$ cd modules<br>
+$ git clone https://github.com/justjim1220/MMM-DailySpecials.git<br>
+$ cd MMM-DailySpecials<br>
+$ npm i<br>
+
+
 ## Using the module
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
