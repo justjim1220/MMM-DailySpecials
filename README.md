@@ -21,7 +21,6 @@ $ npm i<br>
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
 ```js
-var config = {
     modules: [
         {
             disabled: false,
@@ -61,16 +60,14 @@ var config = {
               fadeSpeed: 500
             }
         }
-                    },
-                ]
-            }
+    },
 ```
 
 ## Configuration options
 
 | Option           | Description
 |----------------- |------------
-| `startOfDay`     | set the time to start the day at a certain time. <br><br> **Possible values:** `SEE BELOW FOR CHART` <br> **Default Value:** `(0,0,0,0)`
+| `startOfDay`     | set the time to start the day at a certain time. <br><br> **Possible values:** `SEE BELOW FOR VALUES` <br> **Default Value:** `(0,0,0,0)`
 | `endOfDay`       | set the time to end the day at a certain time. <br><br> **Possible values:** `SEE BELOW FOR CHART` <br> **Default Value:** `(23,59,59,999)`
 | `daymap`         | A map which defines the start days of specials sets.
 | `shrinkLimit`    | Length of special at which a smaller font is used to display it.
@@ -82,6 +79,6 @@ var config = {
 | `remoteFile`     | External file from which to load the specials. <br><br> **Possible values:** Path to a JSON file containing specials, configured as per the value of the _specials configuration_.<br> **Default value:** `null` (Does not load from file)
 
 **startOfDay/endOfDay possible values:**
-Must be set as 4 numbers in () separated by commas, IE: `startOfDay: (8,30,0,0)` will start the day at 8:30 am
-Must have a corresponding end time, IE: `endOfDay: (7,29,59,999)` will end the day at 7:29:59:999 am
+Must be set as 4 numbers in () separated by commas, IE: `startOfDay: (8,30,0,0)` will start the day at 8:30 am.<br>
+Must have a corresponding end time, IE: `endOfDay: (7,29,59,999)` will end the day at 7:29:59:999 am.<br>
 Values: first number represents the `hour (0-23)`, second number represents the `minutes (0-59)`, third number represents the `seconds (0-59)`, the fourth number represents the `milliseconds (0-999)`.
