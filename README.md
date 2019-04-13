@@ -24,12 +24,13 @@ To use this module, add the following configuration block to the modules array i
     modules: [
         {
             disabled: false,
-            module: 'MMM-DailySpecials',
+            module: "MMM-DailySpecials",
+            header: "Today's Drink Special...",
             position: "middle_center",
             config: {
                 startOfDay: (2, 0, 0, 0), // starts the day at 2:00 am
                 endOfDay: (1, 59, 59, 999), // ends the day at 1:59 am
-                shrinkLimit: 35, // to limit number of characters 
+                shrinkLimit: 50, // to limit number of characters 
                 updateInterval: 86400000, // 24 hours OR 1 day
                 remoteFile: null, // to use a JSON file for your specials list IE: _DailySpecials.json_
                 special: {
