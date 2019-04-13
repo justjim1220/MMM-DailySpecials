@@ -15,12 +15,14 @@ To use this module, add the following configuration block to the modules array i
 var config = {
     modules: [
         {
+            disabled: false,
             module: 'MMM-DailySpecials',
             position: "middle_center",
             config: {
-                // OPTIONAL - See below for configurable options
+                startOfDay: (2, 0, 0, 0), // starts the day at 2:00 am
+                endOfDay: (1, 59, 59, 999), // ends the day at 1:59 am
             }
-        }
+        },
     ]
 }
 ```
@@ -28,7 +30,9 @@ var config = {
 ## Configuration options
 
 | Option           | Description
-|----------------- |-----------
+|----------------- |------------
+| `startOfDay`     | set the time to start the day at a certain time. <br><br> **Possible values:** `SEE BELOW FOR CHART` <br> **Default Value:** `(0,0,0,0)`
+| `endOfDay`       | set the time to end the day at a certain time. <br><br> **Possible values:** `SEE BELOW FOR CHART` <br> **Default Value:** `(23,59,59,999)`
 | `daymap`         | A map which defines the start days of specials sets.
 | `shrinkLimit`    | Length of special at which a smaller font is used to display it.
 | `classes`        | *Optional* CSS classes used to display the kudo.
@@ -79,3 +83,7 @@ config: {
   fadeSpeed: 500
 }
 ````
+**startOfDay/endOfDay possible values:**
+Must be set as 4 numbers in () separated by commas, IE: `startOfDay: (8,30,0,0)` will start the day at 8:30 am
+Must have a corresponding end time, IE: `endOfDay: (7,29,59,999)` will end the day at 7:29:59:999 am
+Values: first number represents the `hour (0-23)`, second number represents the `minutes (0-59)`, third number represents the `seconds (0-59)`, the fourth number represents the `milliseconds (0-999)`.
