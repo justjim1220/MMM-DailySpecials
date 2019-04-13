@@ -48,7 +48,7 @@ var config = {
 | `shrinkClasses`  | *Optional* CSS classes used to shrink the kudo.
 | `updateInterval` | How often does the specials have to change? (Milliseconds) <br><br> **for daily use `86400000` <br> **Default value:** `86400000` (24 hours or 1 day)
 | `fadeSpeed`      | Speed of the update animation. (Milliseconds) <br><br> **Possible values:**`0` - `5000` <br> **Default value:** `500` (1/2 second)
-| `specials`       | The list of specials. <br><br> **Possible values:** An object with some arrays - the names are defined in the values of the _hourmap object_ plus the default array `anytime`. See _specials configuration_ below. <br> **Default value:** See _specials configuration_ below.
+| `specials`       | The list of specials. <br><br> **Possible values:** An object with some arrays - the names are defined in the values of the _daymap object_ plus the default array `special`. See _specials configuration_ below. <br> **Default value:** See _specials configuration_ below.
 | `remoteFile`     | External file from which to load the specials. <br><br> **Possible values:** Path to a JSON file containing specials, configured as per the value of the _specials configuration_ (see below).<br> **Default value:** `null` (Does not load from file)
 
 
